@@ -38,3 +38,5 @@ L'organisation du projet est comme le suis
 > ou placer le dans le dossier de votre projet et appeler le fichier *stylsheet.css* dans le fichier css de votre projet
 
 ##Mon cas, j'ai installe le fonts directement dans mon systeme
+
+**Autre fonctionnalite Responsive Web Design**

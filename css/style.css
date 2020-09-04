@@ -1,0 +1,284 @@
+/*Appliquer une fond, couleur blanc, marge exterieur 0, marge interieur 0
+et une scroll lantement au corps du page*/
+body{
+    background: #5b4a02;
+    color:#fff;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+/*Appliquer des styles a la section qui contien le logo*/
+.header-logo{
+    width: 80%;
+    height: auto;
+    margin: 10px 150px;
+    background: #7E6000;
+    text-align: center;
+}
+.separator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lines{
+    width:100%;
+    max-width: 3.4rem;
+    height:.25rem;
+    background: rgb(255, 251, 0);
+    position:relative;
+    opacity:0;
+    animation: grow 2s forwards;
+    animation-delay:.9s;
+}
+.line-right::before,
+.line-left::before{
+    content:'';
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    border:.6rem solid transparent;
+    opacity:0;
+    animation: grow .5s forwards;
+    animation-delay: 1.2s;
+}
+.line-right::before{
+    border-right-color: rgb(255, 251, 0);
+    right:0;
+}
+.line-left::before{
+    border-left-color: rgb(255, 251, 0);
+    left:0;
+}
+.logo{
+    font-size: 60px;
+    line-height: 100px;
+    color:#000;
+    font-family: 'Dyuthi';
+    text-transform: uppercase;
+}
+
+.back-to-lr{
+    width:1rem;
+    height:1rem;
+    background: rgb(255, 251, 0);
+    position: absolute;
+    top:5rem;
+    left:45%;
+    border-radius:50%;
+    animation:lr 5s infinite;
+}
+/*Fin de header qui contien le logo*/
+/*Appliquer une largeur 100%, une hauteur 80px, marge en haut 15px de couleur de fond
+a la bar de menu de navigation*/
+.nav{
+    width: 100%;
+    height: 80px;
+    margin-top: 15px;
+    background: #7E6000;
+}
+/*Appliquer une largeur de 80% au liste de navigation
+et ajouter une marge exterieur de 10px en haut et en bas
+et marge auto a gauche et a droite */
+.nav-menu{
+    width: 80%;
+    margin: 10px 128px;
+}
+/*Faire alignee horizontalement les liens,
+ajouter une marge interieur de 0px en haut et en bas et 10px a gauche et a droite,
+alignee les liens au centre par rapport a la hauteur du bar de navigation,
+Mettre les texts du lien en majiscule, appliquer aux text une font-size de 1.15rem,
+et appliquer une style de police 'CCBellyLaughW00-Regular' au lien*/
+.nav-menu li{
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 110px;
+    text-transform: uppercase;
+    font-family: 'CCBellyLaughW00-Regular';
+}
+/*Enlever le style souligner sur le lien
+colorer le text du lien et faire une transition de .5seconde lors de passage de souris*/
+a{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: rgb(216, 211, 211);
+    transition: all .5s;
+}
+/*Colorer les menu de navigation en blanc quand le souris passe*/
+.nav-menu a:hover{
+    color: rgb(255, 255, 255);
+}
+ /*Style appliquer a la titre h1*/
+.title-containt{
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 500;
+    color: rgb(100, 64, 47);
+    font-family: 'CCBellyLaughW00-Regular';
+}
+/*Faire alignee horizontalement les 3 blocs
+et ajouter de marge 40px en haut, 20px en gauche et droite et 20px en bas du bloc*/
+.menu{
+    display: flex;
+    margin: 40px 20px 20px;
+}
+/*Ajouter une largeur de 30% et de hauteur 270px, de fond, de couleur de txt blanc
+de marge a gauche de chaque bloc et aligner les text au centre*/
+.bloc{
+    width: 30%;
+    height: 270px;
+    position: relative;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin: 0 20px;
+    background: #7E6000;
+    transition: all .4s;
+}
+.bloc:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius:5px;
+    transform: scale(1.1);
+}
+.bloc .Square{
+    position:relative;
+    width:120px;
+    height: 120px;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto;
+    border-radius:50%;
+    line-height: 270px;
+    transform: translateY(50%);
+    font-size: 25px;
+    font-weight: 700;
+    transition:1s;
+}
+.bloc:hover h3{
+    color:#ffffff;
+    align-items: center;
+    display:flex;
+    justify-content:center;
+    border-radius:50%;
+}
+
+/*Pour tracer le ligne ------*/
+.line{
+    width: 100%;
+    margin-bottom: 25px;
+    border-bottom: 2px dashed rgb(100, 64, 47);
+}
+
+.main{
+    width: 82%;
+    background: #fff;
+    color: #7E6000;
+    padding-top: 0;
+    margin: 25px 127px;
+}
+.section-contanint{
+    padding: 15px 30px;
+}
+.main-header{
+    width: 100%;
+    height: 20px;
+    background: #f9f7f7;
+    margin-top: 0;
+
+}
+h2{
+    font-size: 1.15rem;
+    float:none;
+    font-weight: 500;
+    color: rgb(100, 64, 47);
+    font-family: 'CCBellyLaughW00-Regular';
+}
+p{
+    color: #000;
+    text-align: justify;
+}
+/*Faire adapter la page a toute les ecran inferieur a 740px de resolution (Responsive)*/
+@media(max-width:769px){
+    .logo{
+        font-size: 30px;
+        line-height: 100px;
+        text-transform: uppercase;
+    }
+    .header-logo{
+        width: 80%;
+        height: auto;
+        margin: 10px 70px;
+        background: #7E6000;
+    }
+ 
+    .nav-menu{
+        width: 80%;
+        margin: 10px 50px;
+    }
+    .nav-menu li{
+        display: inline-block;
+        padding: 0 5px;
+        text-align: center;
+        line-height: 100px;
+        text-transform: uppercase;
+    
+        font-size: 0.8rem;
+        font-family: 'CCBellyLaughW00-Regular';
+    }
+    a {
+        text-decoration: none;
+        font-size: 0.7rem;
+        color: rgb(216, 211, 211);
+        transition: all .5s;
+    }
+    .menu{
+        display: block;
+
+    }
+    .bloc{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+    .main{
+        width: 82%;
+        background: #fff;
+        color: #7E6000;
+        padding-top: 0;
+        margin: 25px 60px;
+    }
+    h2{
+        text-align: center;
+    }
+}
+
+/* Animations**/
+
+@keyframes grow{
+    0%{
+        width:0;
+    }
+    100%{
+        opacity:1;
+        width:100%;
+    }
+}
+
+
+@keyframes lr{
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:1;
+        color: rgb(0, 0, 0)
+    }
+    100%{
+        opacity:0;
+        transform: translateX(8rem);
+    }
+}

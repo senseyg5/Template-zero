@@ -37,6 +37,6 @@ L'organisation du projet est comme le suis
 > Intaller le fonts **CCBellyLaughW00** dans le dossier **/usr/share/fonts/truetype** de votre ordi
 > ou placer le dans le dossier de votre projet et appeler le fichier *stylsheet.css* dans le fichier css de votre projet
 
-##Mon cas, j'ai installe le fonts directement dans mon systeme
+> Notre cas, j'ai installe le fonts directement dans mon systeme
 
 **Autre fonctionnalite [Responsive Web Design]**

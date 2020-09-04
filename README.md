@@ -39,4 +39,4 @@ L'organisation du projet est comme le suis
 
 ##Mon cas, j'ai installe le fonts directement dans mon systeme
 
-**Autre fonctionnalite Responsive Web Design**
+**Autre fonctionnalite [Responsive Web Design]**

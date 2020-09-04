@@ -11,7 +11,7 @@ body{
 .header-logo{
     width: 80%;
     height: auto;
-    margin: 10px 150px;
+    margin: 10px auto;
     background: #7E6000;
     text-align: center;
 }
@@ -81,7 +81,7 @@ et ajouter une marge exterieur de 10px en haut et en bas
 et marge auto a gauche et a droite */
 .nav-menu{
     width: 80%;
-    margin: 10px 128px;
+    margin: 10px auto;
 }
 /*Faire alignee horizontalement les liens,
 ajouter une marge interieur de 0px en haut et en bas et 10px a gauche et a droite,
@@ -91,7 +91,7 @@ et appliquer une style de police 'CCBellyLaughW00-Regular' au lien*/
 .nav-menu li{
     display: inline-block;
     padding: 0 10px;
-    line-height: 110px;
+    line-height: 80px;
     text-transform: uppercase;
     font-family: 'CCBellyLaughW00-Regular';
 }
@@ -174,11 +174,11 @@ de marge a gauche de chaque bloc et aligner les text au centre*/
 }
 
 .main{
-    width: 82%;
+    width: 80%;
     background: #fff;
     color: #7E6000;
     padding-top: 0;
-    margin: 25px 127px;
+    margin: 25px auto;
 }
 .section-contanint{
     padding: 15px 30px;
@@ -211,19 +211,19 @@ p{
     .header-logo{
         width: 80%;
         height: auto;
-        margin: 10px 70px;
+        margin: 10px auto;
         background: #7E6000;
     }
  
     .nav-menu{
         width: 80%;
-        margin: 10px 50px;
+        margin: 10px auto;
     }
     .nav-menu li{
         display: inline-block;
         padding: 0 5px;
         text-align: center;
-        line-height: 100px;
+        line-height: 80px;
         text-transform: uppercase;
     
         font-size: 0.8rem;
@@ -245,11 +245,11 @@ p{
         margin-left: 0;
     }
     .main{
-        width: 82%;
+        width: 80%;
         background: #fff;
         color: #7E6000;
         padding-top: 0;
-        margin: 25px 60px;
+        margin: 25px auto;
     }
     h2{
         text-align: center;
